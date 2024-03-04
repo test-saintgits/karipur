@@ -1,8 +1,47 @@
 Activity 1: Code Problem Solving Exercise
 Sample C Code Snippet: 
+
+#include <stdio.h>
+int main() {
+    int num;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    // Check if the number is even or odd
+    if (num % 2 == 0) {
+        printf("%d is even.\n", num);
+    } else {
+        printf("%d is odd.\n", num);
+    }
+    
+    return 0;
+}
+
 Problem: Write a C program that takes an integer as input from the user and determines if it is a prime number or not. If the number is prime, print "Prime", otherwise print "Not Prime".
 
 Activity 2: Code Review and Refactoring
 Sample C Code Snippet: 
+
+#include <stdio.h>
+int main() {
+    int num;
+    int sum = 0;
+    
+    // Take input from the user for a range of numbers
+    printf("Enter a range of numbers: ");
+    scanf("%d", &num);
+    
+    // Calculate the sum of numbers from 1 to num
+    for (int i = 1; i <= num; i++) {
+        sum += i;
+    }
+    
+    // Display the sum
+    printf("Sum of numbers from 1 to %d is %d\n", num, sum);
+    
+    return 0;
+}
+
 Problem: Review the provided code and identify any potential improvements or errors. Refactor the code to make it more efficient or readable. Additionally, add error handling to ensure that the user enters a positive integer for the range of numbers.
 Students can choose either of the activities based on their preference and interest. Each activity will help them reinforce their understanding of basic control structures in C programming and improve their problem-solving skills.
